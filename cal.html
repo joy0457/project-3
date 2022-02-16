@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算機</title>
+</head>
+
+
+
+<style>
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+
+#cal {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+}
+
+.buttons > div {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: rgb(85, 85, 255);
+    color: white;
+}
+
+.buttons > div:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+</style>
+<body>
+    
+        <div class="container">
+            <div id="cal"></div>
+            
+                <div class="buttons">
+                    <div class="btn_AC">AC</div>
+                    <div class="btn_divide">/</div>
+                    <div class="btn_multiply">*</div>
+                    <div class="btn_delete">&larr;</div>
+                    <div class="btn_7">7</div>
+                    <div class="btn_8">8</div>
+                    <div class="btn_9">9</div>
+                    <div class="btn_subtract">-</div>
+                    <div class="btn_">4</div>
+                    <div class="btn_">5</div>
+                    <div class="btn_">6</div>
+                    <div class="btn_add">+</div>
+                    <div class="btn_1">1</div>
+                    <div class="btn_2">2</div>
+                    <div class="btn_3">3</div>
+                    <div class="btn_dot">.</div>
+                    
+                    <div class="btn_0" >0</div>
+                
+                    <div id="equal" class="btn_equal">=</div>
+                 </div>
+            </div>
+        </div>
+
+        
+            <script src="cal.js"></script> 
+
+
+</body>
+</html>
